@@ -1,7 +1,7 @@
 ---
 title: Elasticidad Económica en Wolfram Mathematica
 date: 2024-03-05 23:01:05 +/-TTTT
-categories: [Wolfram]
+categories: [Wolfram 1]
 tags: [wolfram, matemáticas, cálculo, facíl]     # TAG names should always be lowercase
 math: true
 
