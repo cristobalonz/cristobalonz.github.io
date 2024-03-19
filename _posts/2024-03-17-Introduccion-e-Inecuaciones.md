@@ -6,7 +6,7 @@ tags: [wolfram, matemáticas, cálculo, facíl]     # TAG names should always be
 math: true
 
 image:
-  path: ./assets/img/Posts/conociendo_wolfram/wolfram1_1.JPG
+  path: /assets/img/Posts/conociendo_wolfram/wolfram1_1.JPG
   alt: Elasticidad economica
 ---
 
@@ -19,13 +19,13 @@ En este Post que es el segundo de la serie de Wolfram 1, veremos una introduccio
 * Plot[{funcion_1, funcion_2, .., funcion_n}, {x,xmin,xmax}, Atributo_1, Atributo_2, .., Atributo_n]: este comando nos permite graficar funciones de una variable y decorarlas de tantas maneras como Wolfram Mathematica lo permita. A continuación se grafican las funciones $$j=sin⁡(3x)+cos⁡(2x)$$ y $$j=0.5$$ pintado el área bajo la curva de ambas funciones.
 
 <div style="text-align:center">
-    <img src="./assets/img/Posts/conociendo_wolfram/imagen1.jpg" alt="Grafica del par de funciones" >
+    <img src="/assets/img/Posts/conociendo_wolfram/imagen1.jpg" alt="Grafica del par de funciones" >
 </div>
 <center>Imagen 1</center>
 
 * RegionPlot[{funcion_1, funcion_2, .., funcion_n}, {x,xmin,xmax},{y,ymin,ymax}]: sirve para graficar regiones completas donde se cumple una desigualdad para una función definida de forma implícita, a continuación se grafican las regiones para las cuales las siguientes inecuaciones son mayores a 0.
 <div style="text-align:center">
-    <img src="./assets/img/Posts/conociendo_wolfram/imagen2.jpg" alt="Grafica del par de regiones" >
+    <img src="/assets/img/Posts/conociendo_wolfram/imagen2.jpg" alt="Grafica del par de regiones" >
 </div>
 <center>Imagen 2</center>
 
@@ -39,7 +39,7 @@ En este Post que es el segundo de la serie de Wolfram 1, veremos una introduccio
 * FindRoot[ecuacion,{x, numero de referencia}]: Encuentra la solución de la ecuación mas cercana al valor de referencia que le entreguemos.
 
 <div style="text-align:center">
-    <img src="./assets/img/Posts/conociendo_wolfram/imagen3.jpg" alt="Uso del comando FindRoot" >
+    <img src="/assets/img/Posts/conociendo_wolfram/imagen3.jpg" alt="Uso del comando FindRoot" >
 </div>
 <center>Imagen 3</center>
 
