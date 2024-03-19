@@ -6,7 +6,7 @@ tags: [wolfram, matemáticas, cálculo, facíl]     # TAG names should always be
 math: true
 
 image:
-  path: /assets/img/Posts/elasticidad.jpg
+  path: ./assets/img/Posts/elasticidad.jpg
   alt: Elasticidad economica
 ---
 
@@ -62,7 +62,7 @@ ListPlot[RelacionPrecioVentas,
 <center>Código 1</center>
 
 <div style="text-align:center">
-    <img src="/assets/img/Posts/grafica1.JPG" alt="Grafica del estudio de mercado" >
+    <img src="./assets/img/Posts/grafica1.JPG" alt="Grafica del estudio de mercado" >
 </div>
 <center>Imagen 1</center>
 
