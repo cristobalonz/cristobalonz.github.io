@@ -9,7 +9,7 @@ image:
   alt: Writeup aero
 ---
 
-# Writeup de Aero
+
 
 Esta vez traigo una writeup de la maquina de HTB Aero, el cual creo que es interesante porque se hara uso de metasploit para obtener la sesion de usuario y en otros writeups he visto que se usa CobaltStrike o Directamente el POC del creador del exploit que permite obtener la sesion, pero en ninguno se ha hecho uso de metasploit.
 
