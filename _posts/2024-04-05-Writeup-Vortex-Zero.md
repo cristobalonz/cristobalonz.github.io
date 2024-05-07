@@ -36,95 +36,64 @@ s.close()
 Pero la idea es aprender C asi que tomamos esa POC y la implementamos en C de la siguiente forma:
 
 ```c
+#include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
-#include <errno.h>
-#include <string.h>
-#include <netdb.h>
 #include <sys/types.h>
-#include <netinet/in.h>
 #include <sys/socket.h>
-#include <arpa/inet.h>
+#include <netinet/in.h>
 
-#define PORT "3490" // the port client will be connecting to
+int main(){
+	//create a socket
+	int network_socket;
+	network_socket = socket(AF_INET, SOCK_STREAM, 0);
 
-#define MAXDATASIZE 100 // max number of bytes we can get at once
 
-// get sockaddr, IPv4 or IPv6:
-void *get_in_addr(struct sockaddr *sa)
-{
-    if (sa->sa_family == AF_INET) {
-    
-    return &(((struct sockaddr_in*)sa)->sin_addr);
-    
-    }
+	//specify an address for the socket
+	struct sockaddr_in server_address;
+	server_address.sin_family = AF_INET;
+	server_address.sin_port = htons(5842);
+	inet_aton("13.50.214.90", &server_address.sin_addr.s_addr);
 
-    return &(((struct sockaddr_in6*)sa)->sin6_addr);
-}
+	int connection_status = connect(network_socket,(struct sockaddr *) &server_address, sizeof(server_address));
 
-int main(int argc, char *argv[])
-{
+	//check for error with the connection
+	if(connection_status == -1){
+		printf("There was an error making a connection to the remote socket \n\n");
+	}
 
-    int sockfd, numbytes;
-    char buf[MAXDATASIZE];
-    struct addrinfo hints, *servinfo, *p;
-    int rv;
-    char s[INET6_ADDRSTRLEN];
+	//receive data from the server
+	int i;
+	unsigned int data = 0;
+	unsigned int server_response[4];
+	for(i = 0; i < 4 ; i++){
+		recv(network_socket, &server_response[i], 4, 0);
+		//printf("The server sent the data %u \n", server_response[i]);
+	}
 
-    if (argc != 2) {
-        fprintf(stderr,"usage: client hostname\n");
-        exit(1);
-    }
+	int k;
+	for(k = 0; k < 4; k++){
+		printf("The server sent the data %u \n", server_response[k]);
+		data = data + server_response[k];
+	}
 
-    memset(&hints, 0, sizeof hints);
-    hints.ai_family = AF_UNSPEC;
-    hints.ai_socktype = SOCK_STREAM;
+	
 
-    if ((rv = getaddrinfo(argv[1], PORT, &hints, &servinfo)) != 0) {
-        fprintf(stderr, "getaddrinfo: %s\n", gai_strerror(rv));
-        return 1;
-    }
+	printf("The final sum is %lu \n", data);
+	
+	//Now we send the data to the server and get the passwd
+	char buffer[1024];
+	send(network_socket,&data,4,0);
+	recv(network_socket,buffer,sizeof(buffer),0);
+	printf("Auth:\n %s\n",buffer);
 
-    // loop through all the results and connect to the first we can
-    for(p = servinfo; p != NULL; p = p->ai_next) {
-        if ((sockfd = socket(p->ai_family, p->ai_socktype,
-                p->ai_protocol)) == -1) {
-            perror("client: socket");
-            continue;
-        }
 
-        if (connect(sockfd, p->ai_addr, p->ai_addrlen) == -1) {
-            close(sockfd);
-            perror("client: connect");
-            continue;
-        }
+	
+	//and then close the socket
+	close(network_socket);
 
-        break;
-    }
-
-    if (p == NULL) {
-        fprintf(stderr, "client: failed to connect\n");
-        return 2;
-    }
-
-    inet_ntop(p->ai_family, get_in_addr((struct sockaddr *)p->ai_addr),
-        s, sizeof s);
-    printf("client: connecting to %s\n", s);
-
-    freeaddrinfo(servinfo); // all done with this structure
-
-    if ((numbytes = recv(sockfd, buf, MAXDATASIZE-1, 0)) == -1) {
-        perror("recv");
-        exit(1);
-    }
-
-    buf[numbytes] = '\0';
-
-    printf("client: received '%s'\n",buf);
-
-    close(sockfd);
-
-    return 0;
+	
+	
+	return 0;
 }
 ```
 
