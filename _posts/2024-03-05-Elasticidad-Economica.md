@@ -6,7 +6,7 @@ tags: [wolfram, matemáticas, cálculo, facíl]     # TAG names should always be
 math: true
 
 image:
-  path: /assets/img/Posts/Elasticidad/elasticidad.jpg
+  path: /assets/img/Posts/conociendo_wolfram/wolfram1_1.jpg
   alt: Elasticidad economica
 ---
 
