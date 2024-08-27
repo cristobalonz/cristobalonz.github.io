@@ -5,9 +5,9 @@ order: 4
 ---
 ## ¡Hola, soy Cristóbal Córdova!
 
-Soy un estudiante de Ingeniería Informática en la UTFSM en Chile. Sin embargo, en línea, me conocen como CrackerJacker, Logic Vortex o The_Pharck. Mi pasión por la ciberseguridad y mi compromiso con la educación me han llevado a ofrecer ayudantías de matemáticas.
+Soy un estudiante de Ingeniería Informática en la UTFSM en Chile. Sin embargo, en línea, me conocen como Privalov. Mi pasión por la ciberseguridad me han llevado a desarrollar este blog.
 
-Este blog lo utilizo como un recurso para mis estudiantes, pero ademas comparto contenido sobre hacking, electrónica y también lo uso como una forma de documentar notas útiles para mi yo del futuro.
+Este blog lo utilizo como un recurso para compartir contenido sobre hacking, electrónica y también lo uso como una forma de documentar notas útiles para mi yo del futuro.
 
 Si te gusta lo que hago puedes conocer mas sobre mi trabajo en Linkedin o Github.
 

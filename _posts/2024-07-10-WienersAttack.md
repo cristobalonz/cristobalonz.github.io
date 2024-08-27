@@ -9,7 +9,7 @@ header-includes:
   - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 
 image:
-  path: /assets/img/Posts/Ataque_de_Wieners/portadaWieners.JPG
+  path: /assets/img/Posts/Ataque_de_wieners/portadaWieners.JPG
   alt: RSA
 ---
 

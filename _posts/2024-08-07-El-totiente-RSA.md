@@ -9,7 +9,7 @@ header-includes:
   - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 
 image:
-  path: /assets/img/Posts/El_totiente/portada.JPG
+  path: /assets/img/Posts/El_totiente/portada.jpg
   alt: RSA
 ---
 
