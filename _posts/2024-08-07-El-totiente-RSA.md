@@ -47,7 +47,7 @@ $\phi (n) = \phi (p1^{e1}) \cdot \phi (p2^{e2}) \cdot ... \cdot \phi (pk^{ek})$
 La grafica de los primeros 100 totientes es la siguiente:
 
 <div style="text-align:center">
-    <img src="/assets/img/Posts/El totiente/primeros100totientes.JPG" alt="" >
+    <img src="/assets/img/Posts/El totiente RSA/primeros100totientes.JPG" alt="" >
 </div>
 
 ### Ataques que usan el totiente:
