@@ -9,7 +9,7 @@ header-includes:
   - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 
 image:
-  path: /assets/img/Posts/Factorizar N en RSA/portada.JPG
+  path: /assets/img/Posts/Factorizar N en RSA/portadaRSA.JPG
   alt: RSA
 ---
 
