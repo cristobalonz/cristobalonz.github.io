@@ -13,7 +13,7 @@ image:
   alt: RSA
 ---
 
-El ataque de Wieners nos permite obtener la clave privada d cuando $$\Large d < \frac{1}{3} \cdot \sqrt[4]{N}$$, esto en la practica sucede cuando la clave publica e es muy grande. La logica es la siguiente:
+El ataque de Wieners nos permite obtener la clave privada d cuando esta tiene un tamano especifico respecto a N, especificamente cuando se cumple la relacion: $$\Large d < \frac{1}{3} \cdot \sqrt[4]{N}$$, esto en la practica sucede cuando la clave publica e es muy grande. La logica es la siguiente:
 <br>
 <br>
 
