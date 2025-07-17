@@ -62,6 +62,11 @@ Las licencias de las imagenes utilizadas copiadas de otro autor se listan a cont
 
 Si alguna imagen no sale y es externa es porque ya no recuerdo de donde la saque pero si eres el autor y quieres que la baje contactame.
 
+## Notas de desarrollo:
+
+- Se debe mantener el workflow de github actions.
+- Ver posibilidad preloader y mantener las imagenes en cache.
+
 
 
 
