@@ -58,7 +58,16 @@ Las licencias de las imagenes utilizadas copiadas de otro autor se listan a cont
 
 **assets/img/site/tokio-night.jpg**: Esta imagen fue tomada de WallpaperCave (https://wallpapercave.com/) con fines no comerciales y educativos. Si el autor desea que se retire o se atribuya, puede contactarme.
 
-Si alguna imagen no sale y es externa es porque ya no recuerdo de donde la saque pero si eres el autor y quieres que la baje contactarme.
+**assets/img/site/tokio-street.jpg**: Esta imagen fue tomada de Pexels (https://www.pexels.com/photo/dark-alley-1510610/) y es free to use.
+
+Si alguna imagen no sale y es externa es porque ya no recuerdo de donde la saque pero si eres el autor y quieres que la baje contactame.
+
+## Notas de desarrollo:
+
+- Se debe mantener el workflow de github actions.
+- Ver posibilidad preloader y mantener las imagenes en cache.
+
+
 
 
 

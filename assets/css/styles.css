@@ -1,0 +1,8 @@
+#sidebar {
+  background-image: url('/ruta/a/tu/imagen.jpg');
+  background-size: cover;       /* para que la imagen cubra todo el área */
+  background-position: center;  /* centra la imagen */
+  background-repeat: no-repeat; /* no repetir */
+  /* Opcional: agregar un color de fondo semitransparente si quieres */
+  /* background-color: rgba(0,0,0,0.5); */
+}
