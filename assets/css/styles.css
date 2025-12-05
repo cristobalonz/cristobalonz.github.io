@@ -6,3 +6,9 @@
   /* Opcional: agregar un color de fondo semitransparente si quieres */
   /* background-color: rgba(0,0,0,0.5); */
 }
+
+/* Textos que NO cambian según el tema */
+.no-theme-change {
+  color: var(--text-color-dark) !important;
+}
+
